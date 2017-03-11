@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--suppress ALL -->
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -7,209 +6,217 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
 
     <style>
-        * {
+        *
+        {
             margin: 0;
             padding: 0;
             border: 0;
-            font-family:monospace;
+            vertical-align: baseline;
         }
-        table {
-            border-collapse: collapse;
-            border-spacing: 0;
-        }
-        body{
-            width:100%;
-            background-color: #CCCCCC;
-        }
-        header{
+
+        body {
             background-color: #000000;
-            color: #ffffff;
-            height:60px;
-            margin-bottom:20px;
+            font-size: 14px
         }
+
+        .main {
+            width: 1290px;
+            margin: 0 auto;
+            background-color: #DEDEDE
+        }
+
+        header {
+            height: 60px;
+            background: #333333;
+            padding: 0;
+        }
+
         header h1 {
-            width:180px;
-            margin:15px 0;
-            float:left;
-        }
-        header nav ul {
-            margin:23px 0;
-            display: inline;
-            float:right;
-        }
-        header nav ul li {
-            color: #333333;
-            margin-right:2em;
-            float:left;
-        }
-        main{
-            margin:0 20px;
-        }
-        main article {
-            background-color: #ffffff;
-            padding:40px 0 60px 30px ;
-            margin-bottom: 20px;
-        }
-        main article h1 {
-            margin-bottom:10px;
-            font-size:2em;
-        }
-        main article h2{
-            margin-bottom:10px;
-        }
-        main article span {
-            color: #888;
-            font-size: 1.1em;
-            margin-bottom:10px;
-        }
-        main article p{
-
-            text-indent: 2em;
+            color: #FFFFFF;
             margin-top: 10px;
-            line-height:2em;
+            float: left
         }
-        main article img {
-            margin:20px 0 10px 0 ;
-        }
-        main article ul {
-            list-style: none;
-        }
-        main article ul li {
-            margin-top:10px;
-        }
-        main article figure figcaption{
-            border:1px solid #CCCCCC;
-            width: 140px;
-            margin:20px 0 20px 60px;
-            text-align: center;
-            padding:10px;
-        }
-        main article figure figcaption img{
-            width: 100px;
-            height:100px;
-        }
-        main article ol{
-            margin:15px 0 20px 40px;
-            font-size:1.2em;
-        }
-        main article ol li {
-            margin-bottom: 10px;
-        }
-        table,th,td{
-            font-size: 16px;
-            border: 1px solid #8B8B8B;
-            padding:4px;
-        }
-        .table-desc{
+
+        nav ul {
+            margin-top: 20px;
+            float: right;
             color: #000000;
-        }
-        .table-title{
-            color:#fff;
-            background-color: #000;
 
         }
-        .t1,.t2{
-            width:700px;
-            text-align: left;
 
+        nav ul li {
+            margin-right: 30px;
+            float: left
+        }
 
+        article {
+            background-color: #FFFFFF;
+            margin: 20px 20px 0 20px;
+            padding-bottom: 2em
         }
-        .t3{
-            width:400px;
-            text-align: left;
-        }
-        .table-end{
-            background-color: #8B8B8B;
-        }
+
         aside {
-            margin:0 20px;
-            background-color: #ffffff;
-            padding:40px 0 60px 30px ;
-
-        }
-        aside h1 {
-            font-size: 2em;
-            border-left: 5px solid #ccc;
-            padding-left:10px;
-            margin-bottom: 20px;
-        }
-        aside form {
-            font-size:14px;
-        }
-        input{
-            height:16px;
-            width:16px;
-        }
-        aside form .input-text{
-            border:1px solid #ccc;
-            height:28px;
-            width:140px;
+            background-color: #FFFFFF;
+            margin: 20px 20px 0 20px;
+            padding-bottom: 2em
         }
 
-        .form-row{
-            padding:2px;
-            widht:100%;
-            height:34px;
-
+        article h1 {
+            padding-top: 35px;
+            padding-left: 20px
         }
-        aside span{
-            margin:7px 14px 7px 0;
+
+        article h2 {
+            padding-top: 20px;
+            padding-left: 20px;
+            color: #7B7B7B;
+            margin-bottom: 20px
+        }
+
+        article span {
             display: block;
-            float: left;
-            width:560px;
-            text-align: right;
+            margin-left: 20px;
+            color: #8B8B8B;
+            margin-bottom: 20px
+        }
 
+        article p {
+            margin: 20px;
+            line-height: 1.75em;
+            text-indent: 2em
         }
-        .aside-right{
-            float: left;
-            text-align: left;
-            margin-left:574px;
-        }
-        .input-check{
 
-            margin-top:7px;
+        article img {
+            margin-left: 20px
         }
-        aside form label{
-            height:16px;
-            vertical-align: top;
-        }
-        textarea{
-            margin-top: 6px;
-            border: 1px solid #ccc;
-            margin-bottom: 20px;
-        }
-        button{
 
-            width:98%;
-            background-color: #0000FF;
-            border-radius: 15px;
+        article ul {
+            margin: 20px 0 20px 40px
+        }
+
+        article ul li {
+            margin-top: 10px;
+            list-style: none
+        }
+
+        article figure {
+            border: 1px solid;
+            margin: 20px 0 0 65px;
+            width: 260px
+        }
+
+        article figure figcaption {
+            text-align: center
+        }
+
+        article figure figcaption img {
+            width: 180px;
+            margin: 20px
+        }
+
+        article ol {
+            margin: 0px 0 40px 60px;
+            list-style-type: decimal
+        }
+
+        article table {
+            margin-left: 20px;
+            border: 1px solid #CCCCCC
+        }
+
+        .table-title {
+            background-color: #000000;
+            color: #FFFFFF
+        }
+
+        table {
+            width: 1200px
+        }
+
+        .table-title th {
+            border: 1px solid #CCCCCC
+        }
+
+        td {
+            border: 1px solid #CCCCCC
+        }
+
+        .t1 {
+            width: 40%
+        }
+
+        .t2 {
+            width: 40%
+        }
+
+        .t3 {
+            width: 30%
+        }
+
+        .table-desc {
+            color: #000000
+        }
+
+        .table-end {
+            background-color: #CCCCCC
+        }
+
+        aside  h1 {
+            padding-top:40px;
+            margin:0 0 40px 20px;
+        }
+        .input-text {
+            width:125px;
+            height:20px;
+            border:1px solid #CCCCCC;
+        }
+        aside form button {
+            width: 97%;
             height:40px;
-            color: #ffffff;
             font-size: 20px;
             text-align: center;
+            margin:0 20px 0 20px;
+            background-color: blue;
+            color:#FFFFFF;
+            border-radius: 5px;
 
         }
-        footer{
+        aside form span {
+            display: block;
+            width:380px;
+            text-align: right;
+            float:left;
+        }
+        .aside-right {
+            text-align:left;
+            margin-left:390px;
+            display: block;
+        }
+        textarea {
 
-            background-color: #000000;
-            text-align: center;
-            color: #FFFFFF;
-            padding:30px;
+            border:1px solid #CCCCCC;
+            margin-left: 10px;
+        }
+        input {
+            margin-left:10px;
         }
     </style>
     <title>
-        任务二：零基础HTML及CSS编码（一）
+        这是第二个任务
     </title>
-
+    </link>
+    </meta>
+    </meta>
+    </meta>
 </head>
 <body>
-
+<div class="main">
     <header>
         <h1>
             网站一级标题
         </h1>
         <nav>
-            <ul>
+            <ul class="goto">
                 <li>
                     <a href="#">
                         导航链接一
@@ -233,9 +240,6 @@
             </ul>
         </nav>
     </header>
-
-    <main>
-
     <article>
         <h1>
             文章一级标题
@@ -260,7 +264,7 @@
             </b>
             ，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落。
         </p>
-        <img alt="动漫图片" height="200px" src="../../images/279.jpg">
+        <img alt="动漫图片" height="200px" src="../images/279.jpg">
         <p>
             这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
             <a href="http://www.baidu.com">
@@ -272,7 +276,7 @@
             </b>
             ，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落。
         </p>
-
+        </img>
     </article>
     <article>
         <h1>
@@ -298,7 +302,7 @@
             </b>
             ，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落。
         </p>
-        <img alt="动漫图片" height="200px" src="../../images/279.jpg">
+        <img alt="动漫图片" height="200px" src="../images/279.jpg">
         <ul>
             <li>
                 项目列表1
@@ -310,7 +314,7 @@
                 项目列表3
             </li>
         </ul>
-
+        </img>
     </article>
     <article>
         <h1>
@@ -320,77 +324,80 @@
             <figcaption>
                 好看的图片
                 <br>
-                <img alt="动漫图片" height="200px" src="../../images/279.jpg"/>
+                <img alt="动漫图片" height="200px" src="../images/279.jpg"/>
+                </br>
             </figcaption>
         </figure>
         <figure>
             <figcaption>
                 好看的图片
                 <br>
-                <img alt="动漫图片" height="200px" src="../../images/279.jpg"/>
+                <img alt="动漫图片" height="200px" src="../images/279.jpg"/>
+                </br>
             </figcaption>
         </figure>
         <figure>
             <figcaption>
                 好看的图片
                 <br>
-                <img alt="动漫图片" height="200px" src="../../images/279.jpg"/>
+                <img alt="动漫图片" height="200px" src="../images/279.jpg"/>
+                </br>
             </figcaption>
         </figure>
         <figure>
             <figcaption>
                 好看的图片
                 <br>
-                <img alt="动漫图片" height="200px" src="../../images/279.jpg"/>
-
+                <img alt="动漫图片" height="200px" src="../images/279.jpg"/>
+                </br>
             </figcaption>
         </figure>
         <figure>
             <figcaption>
                 好看的图片
                 <br>
-                <img alt="动漫图片" height="200px" src="../../images/279.jpg"/>
-
+                <img alt="动漫图片" height="200px" src="../images/279.jpg"/>
+                </br>
             </figcaption>
         </figure>
         <figure>
             <figcaption>
                 好看的图片
                 <br>
-                <img alt="动漫图片" height="200px" src="../../images/279.jpg"/>
-
+                <img alt="动漫图片" height="200px" src="../images/279.jpg"/>
+                </br>
             </figcaption>
         </figure>
         <figure>
             <figcaption>
                 好看的图片
                 <br>
-                <img alt="动漫图片" height="200px" src="../../images/279.jpg"/>
-
+                <img alt="动漫图片" height="200px" src="../images/279.jpg"/>
+                </br>
             </figcaption>
         </figure>
         <figure>
             <figcaption>
                 好看的图片
                 <br>
-                <img alt="动漫图片" height="200px" src="../../images/279.jpg"/>
-
+                <img alt="动漫图片" height="200px" src="../images/279.jpg"/>
+                </br>
             </figcaption>
         </figure>
         <figure>
             <figcaption>
                 好看的图片
                 <br>
-                <img alt="动漫图片" height="200px" src="../../images/279.jpg"/>
-
+                <img alt="动漫图片" height="200px" src="../images/279.jpg"/>
+                </br>
             </figcaption>
         </figure>
         <figure>
             <figcaption>
                 好看的图片
                 <br>
-                <img alt="动漫图片" height="200px" src="../../images/279.jpg"/>
-
+                <img alt="动漫图片" height="200px" src="../images/279.jpg"/>
+                </br>
             </figcaption>
         </figure>
     </article>
@@ -493,40 +500,33 @@
             </tr>
         </table>
     </article>
-</main>
     <aside>
         <h1>
             这里以后是一个侧栏，这是侧栏的标题
         </h1>
-        <form action="../">
-            <div class="form-row">
+        <form action="./">
             <span>请输入邮箱地址</span>
             <input name="emali-address" placeholder="这里是一个文本框" type="text" class="input-text">
-            </div>
-            <div class="form-row">
+            <br/>
             <span class="aside-right">邮箱地址请按要求格式输入</span>
-            </div><div class="form-row">
+            <br/>
             <span >请输入密码</span>
-            <input name="first-passwd" placeholder="这里是一个文本框" type="password" class="input-text"></div><div class="form-row">
+            <input name="first-passwd" placeholder="这里是一个文本框" type="password" class="input-text"><br>
             <span>请重复输入密码</span>
             <input name="repeat-passwd" placeholder="这里是一个文本框" type="password" class="input-text">
-            </div>
-            <div class="form-row">
-                <span class="aside-right">密码请为6~16位英文数字 </span></div>
-            <div class="form-row">
-            <span>性别</span>
-                <div class="input-check">
-                <label>
-
+            <br/>
+            <span class="aside-right">密码请为6~16位英文数字 </span><br><br>
+            <span>性别</span><label>
             <input checked name="sex" type="radio" >
             男
-
+            </input>
         </label>
             <label>
                 <input name="sex" type="radio">
                 女
-            </label></div></div><div class="form-row">
-            <span>城市</span><div class="input-check"><select id="" name="">
+                </input>
+            </label><br>
+            <span>城市</span><select name="">
             <option value="">
                 北京
             </option>
@@ -542,27 +542,35 @@
             <option value="">
                 北京
             </option>
-        </select></div></div><div class="form-row">
-            <span>爱好</span><div class="input-check"><label>
+        </select><br>
+            <span>爱好</span><label>
             <input type="checkbox">
             运动
+            </input>
         </label>
             <label for="">
                 <input type="checkbox">
                 艺术
+                </input>
             </label>
             <label for="">
                 <input type="checkbox">
                 科学
-            </label></div></div>
+                </input>
+            </label><br>
             <span>
-                个人描述</span><textarea cols="100"  name="" placeholder="这里是一个多行文本框，输入您的个人描述" rows="8"></textarea><br />
-            <button type="submit">确认提交</button>
+            个人描述</span><textarea cols="100" id="" name="" placeholder="这里是一个多行文本框，输入您的个人描述" rows="8">
+</textarea><br>
+            <button type="submit" values="确认提交">确认提交</button>
+            </input>
+            </input>
+            </input>
+            </input>
         </form>
     </aside>
     <footer>
         版权所有©
     </footer>
-
+</div>
 </body>
 </html>
